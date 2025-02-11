@@ -10,7 +10,6 @@ import MyProfile from "./pages/MyProfile.jsx";
 import Appointment from "./pages/Appointment.jsx";
 import MyAppointments from "./pages/MyAppointments.jsx";
 
-
 const App = () => {
     return (
         <div className='mx-4 sm:mx-[10%]'>
