@@ -3,6 +3,7 @@ import {AppContext} from "../../context/AppContext.jsx";
 import {AdminContext} from "../../context/AdminContext.jsx";
 import {toast} from "react-toastify";
 import axios from "axios";
+import {assets} from "../../assets/assets.js";
 
 const AddDoctor = () => {
     const [docImg, setDocImg] = useState(false)
@@ -24,7 +25,7 @@ const AddDoctor = () => {
         event.preventDefault()
         try {
             if (!docImg) {
-                return toast.error('Image Not Selected')
+                return toast.error("Image Not Selected")
             }
             const formData = new FormData();
             formData.append("image", docImg)
@@ -39,10 +40,10 @@ const AddDoctor = () => {
             formData.append("address", JSON.stringify({ line1: address1, line2: address2 }))
 
             // console log formdata
-            formData.forEach((value, key) => {
+/*            formData.forEach((value, key) => {
                 console.log(`${key}: ${value}`);
-            });
-            const { data } = await axios.post(backendUrl + '/api/admin/add-doctor', formData, { headers: { aToken } })
+            });*/
+            const { data } = await axios.post(backendUrl + '/api/admin/add-doctor', formData, {headers: {aToken}})
             if (data.success) {
                 toast.success(data.message)
                 setDocImg(false)
