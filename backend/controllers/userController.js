@@ -2,7 +2,8 @@ import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken";
 import cloudinary from "../config/cloudinary.js";
 import doctorModel from "../models/doctorModel.js";
-
+import validator from "validator";
+import bcrypt from "bcrypt";
 const registerUser = async (req, res) => {
 
     try {
