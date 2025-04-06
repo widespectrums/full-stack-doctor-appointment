@@ -1,9 +1,12 @@
 import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken";
-import cloudinary from "../config/cloudinary.js";
 import doctorModel from "../models/doctorModel.js";
 import validator from "validator";
 import bcrypt from "bcrypt";
+import razorpay from "razorpay";
+import {v2 as cloudinary} from "cloudinary"
+import appointmentModel from "../models/appointmentModel.js";
+
 const registerUser = async (req, res) => {
 
     try {
@@ -93,7 +96,7 @@ const bookAppointment = async (req, res) => {
             return res.json({success: false, message: 'Doctor Not Available'})
         }
         let slots_booked = docData.slots_booked
-        // checking for slot availablity
+        // checking for slot availability
         if (slots_booked[slotDate]) {
             if (slots_booked[slotDate].includes(slotTime)) {
                 return res.json({success: false, message: 'Slot Not Available'})
@@ -149,7 +152,7 @@ const cancelAppointment = async (req, res) => {
         res.json({success: false, message: error.message})
     }
 }
-// API to get user appointments for frontend myappointments page
+// API to get user appointments for frontend my appointments page
 const listAppointment = async (req, res) => {
     try {
         const {userId} = req.body
@@ -160,6 +163,10 @@ const listAppointment = async (req, res) => {
         res.json({success: false, message: error.message})
     }
 }
+const razorpayInstance = new razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_SECRET_KEY
+})
 // API to make payment of appointment using razorpay
 const paymentRazorpay = async (req, res) => {
     try {

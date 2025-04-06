@@ -1,7 +1,7 @@
 import {useContext, useEffect} from "react";
 import {AdminContext} from "../../context/AdminContext.jsx";
-import {assets} from "../../assets/assets.js";
 import {AppContext} from "../../context/AppContext.jsx";
+import {assets} from "../../assets/assets.js";
 
 const Dashboard = () => {
 

@@ -3,6 +3,7 @@ import {AppContext} from "../../context/AppContext.jsx";
 import {AdminContext} from "../../context/AdminContext.jsx";
 import {assets} from "../../assets/assets.js";
 
+
 const AllAppointments = () => {
     const {aToken, appointments, cancelAppointment, getAllAppointments} = useContext(AdminContext)
     const {slotDateFormat, calculateAge, currency} = useContext(AppContext)

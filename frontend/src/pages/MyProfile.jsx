@@ -1,14 +1,14 @@
 import {useContext, useState} from 'react'
-import {assets} from "../assets/assets.js";
 import {AppContext} from "../context/AppContext.jsx";
 import {toast} from "react-toastify";
 import axios from "axios";
+import {assets} from "../assets/assets.js";
 
 const MyProfile = () => {
     const [isEdit, setIsEdit] = useState(false)
     const [image, setImage] = useState(false)
     const {token, backendUrl, userData, setUserData, loadUserProfileData} = useContext(AppContext)
-    // Function to update user profile data using API
+
     const updateUserProfileData = async () => {
         try {
             const formData = new FormData();
@@ -34,12 +34,12 @@ const MyProfile = () => {
             toast.error(error.message)
         }
     }
-    return userData ? (
+    return userData && (
         <div className={"max-w-lg flex flex-col gap-2 text-sm"}>
             {isEdit
                 ? <label htmlFor={"image"}>
                     <div className={"inline-block relative cursor-pointer"}>
-                        <img className={"w-36 rounded"} src={image ? URL.createObjectURL(image) : userData.image}
+                        <img className={"w-36 rounded opacity-75"} src={image ? URL.createObjectURL(image) : userData.image}
                              alt=""/>
                         <img className={"w-10 absolute bottom-12 right-12"} src={image ? '' : assets.upload_icon}
                              alt=""/>
@@ -117,7 +117,7 @@ const MyProfile = () => {
                 }
             </div>
         </div>
-    ) : null
+    )
 }
 
 export default MyProfile
