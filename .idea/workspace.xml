@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4eb36b5-4b2b-4ffd-b059-07823366c81b" name="Changes" comment="App.jsx">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+    <list default="true" id="c4eb36b5-4b2b-4ffd-b059-07823366c81b" name="Changes" comment="doctors , admin dashboard updated">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/node_modules/.bin/acorn" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/node_modules/.bin/autoprefixer" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/node_modules/.bin/browserslist" afterDir="false" />
@@ -9237,64 +9235,21 @@
       <change afterPath="$PROJECT_DIR$/frontend/node_modules/yocto-queue/license" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/node_modules/yocto-queue/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/node_modules/yocto-queue/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/Dermatologist.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/Gastroenterologist.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/General_physician.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/Gynecologist.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/Neurologist.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/Pediatricians.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/about_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/appointment_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/arrow_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/assets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/chats_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/contact_image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/cross_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/doc9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/dropdown_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/group_profiles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/header_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/info_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/menu_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/profile_pic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/razorpay_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/stripe_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/upload_area.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/upload_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/verified_icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Banner.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/SpecialityMenu.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/TopDoctors.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/context/AppContext.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Appointment.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/context/DoctorContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/context/DoctorContext.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/pages/Doctor/DoctorAppointments.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/pages/Doctor/DoctorAppointments.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/doctorController.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/doctorController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/doctorRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/doctorRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -9336,16 +9291,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JavaScript Debug.localhost:3000.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/birgulkurtcu/Documents/GitHub/Doctor Appointment Booking Project/frontend",
+    "last_opened_file_path": "/Users/birgulkurtcu/Documents/GitHub/Doctor Appointment Booking Project",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.server.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -9359,15 +9318,51 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/frontend" />
-      <recent name="$PROJECT_DIR$/frontend/src/assets" />
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/admin/src/contect" />
+      <recent name="$PROJECT_DIR$/admin/src/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/admin/src" />
       <recent name="$PROJECT_DIR$/frontend" />
       <recent name="$PROJECT_DIR$/frontend/src" />
       <recent name="$PROJECT_DIR$/frontend/src/assets" />
       <recent name="$PROJECT_DIR$/frontend/src/components" />
     </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.localhost:3000">
+    <configuration name="localhost:3000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/admin/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/backend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.localhost:3000" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.server" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -9396,6 +9391,39 @@
       <workItem from="1738877394969" duration="1608000" />
       <workItem from="1738946651344" duration="9477000" />
       <workItem from="1739105540672" duration="10350000" />
+      <workItem from="1739296797821" duration="12736000" />
+      <workItem from="1739472705913" duration="6977000" />
+      <workItem from="1739552260503" duration="9893000" />
+      <workItem from="1739568398379" duration="1862000" />
+      <workItem from="1739626431481" duration="4583000" />
+      <workItem from="1739649740660" duration="3302000" />
+      <workItem from="1739801527970" duration="3483000" />
+      <workItem from="1739807386867" duration="6172000" />
+      <workItem from="1739813776209" duration="393000" />
+      <workItem from="1739888506382" duration="3547000" />
+      <workItem from="1739975696071" duration="7068000" />
+      <workItem from="1739990148388" duration="1226000" />
+      <workItem from="1739991483950" duration="91000" />
+      <workItem from="1739993921614" duration="402000" />
+      <workItem from="1739996507949" duration="628000" />
+      <workItem from="1740061882227" duration="612000" />
+      <workItem from="1740062504884" duration="104000" />
+      <workItem from="1740062619831" duration="5000" />
+      <workItem from="1740078565725" duration="1597000" />
+      <workItem from="1740085852937" duration="122000" />
+      <workItem from="1740086876989" duration="1983000" />
+      <workItem from="1740143576336" duration="6388000" />
+      <workItem from="1740248541082" duration="4216000" />
+      <workItem from="1740749280699" duration="1520000" />
+      <workItem from="1740778357891" duration="4140000" />
+      <workItem from="1740828820516" duration="8941000" />
+      <workItem from="1740921150727" duration="1068000" />
+      <workItem from="1741038717511" duration="3293000" />
+      <workItem from="1743872562218" duration="506000" />
+      <workItem from="1743937322472" duration="4772000" />
+      <workItem from="1744025540390" duration="658000" />
+      <workItem from="1744026227888" duration="462000" />
+      <workItem from="1744027198390" duration="3940000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -9437,11 +9465,335 @@
       <option name="project" value="LOCAL" />
       <updated>1739107792310</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Doctors.jsx">
+      <option name="closed" value="true" />
+      <created>1739316924018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1739316924018</updated>
+    </task>
+    <task id="LOCAL-00007" summary="updated">
+      <option name="closed" value="true" />
+      <created>1739317125711</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1739317125711</updated>
+    </task>
+    <task id="LOCAL-00008" summary="abput , contact .jsx">
+      <option name="closed" value="true" />
+      <created>1739318295723</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1739318295723</updated>
+    </task>
+    <task id="LOCAL-00009" summary="login .jsx">
+      <option name="closed" value="true" />
+      <created>1739473702756</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739473702756</updated>
+    </task>
+    <task id="LOCAL-00010" summary="responsive code added">
+      <option name="closed" value="true" />
+      <created>1739483124684</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739483124684</updated>
+    </task>
+    <task id="LOCAL-00011" summary="backend first commit">
+      <option name="closed" value="true" />
+      <created>1739630583954</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1739630583954</updated>
+    </task>
+    <task id="LOCAL-00012" summary="doctors.jsx updated">
+      <option name="closed" value="true" />
+      <created>1739630823658</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739630823659</updated>
+    </task>
+    <task id="LOCAL-00013" summary="MyAppointment.jsx , MyProfile.jsx added">
+      <option name="closed" value="true" />
+      <created>1739630883274</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739630883274</updated>
+    </task>
+    <task id="LOCAL-00014" summary="admin panel added">
+      <option name="closed" value="true" />
+      <created>1739813947701</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739813947701</updated>
+    </task>
+    <task id="LOCAL-00015" summary="auth.js added">
+      <option name="closed" value="true" />
+      <created>1739814079624</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739814079624</updated>
+    </task>
+    <task id="LOCAL-00016" summary="routes updated">
+      <option name="closed" value="true" />
+      <created>1739814122122</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739814122122</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Sidebar.jsx">
+      <option name="closed" value="true" />
+      <created>1739892407807</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739892407807</updated>
+    </task>
+    <task id="LOCAL-00018" summary="AddDoctor.jsx page">
+      <option name="closed" value="true" />
+      <created>1739892468298</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739892468298</updated>
+    </task>
+    <task id="LOCAL-00019" summary="doctorController.js">
+      <option name="closed" value="true" />
+      <created>1739983998962</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739983998962</updated>
+    </task>
+    <task id="LOCAL-00020" summary="method added">
+      <option name="closed" value="true" />
+      <created>1739984046733</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1739984046733</updated>
+    </task>
+    <task id="LOCAL-00021" summary="DoctorsList.jsx added">
+      <option name="closed" value="true" />
+      <created>1739984097575</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1739984097575</updated>
+    </task>
+    <task id="LOCAL-00022" summary="AdminContext. jsx updated">
+      <option name="closed" value="true" />
+      <created>1739993975532</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1739993975532</updated>
+    </task>
+    <task id="LOCAL-00023" summary="AddDoctor. jsx updated">
+      <option name="closed" value="true" />
+      <created>1739994305338</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1739994305338</updated>
+    </task>
+    <task id="LOCAL-00024" summary="userController.js">
+      <option name="closed" value="true" />
+      <created>1740079534915</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1740079534915</updated>
+    </task>
+    <task id="LOCAL-00025" summary="doctorList function added">
+      <option name="closed" value="true" />
+      <created>1740079565811</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1740079565811</updated>
+    </task>
+    <task id="LOCAL-00026" summary="doctorRoute.js">
+      <option name="closed" value="true" />
+      <created>1740079593204</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1740079593204</updated>
+    </task>
+    <task id="LOCAL-00027" summary="router updated">
+      <option name="closed" value="true" />
+      <created>1740079653992</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1740079653992</updated>
+    </task>
+    <task id="LOCAL-00028" summary="import fixed">
+      <option name="closed" value="true" />
+      <created>1740180935214</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1740180935214</updated>
+    </task>
+    <task id="LOCAL-00029" summary="import fixed">
+      <option name="closed" value="true" />
+      <created>1740180966689</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1740180966689</updated>
+    </task>
+    <task id="LOCAL-00030" summary="router updated">
+      <option name="closed" value="true" />
+      <created>1740180990437</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1740180990437</updated>
+    </task>
+    <task id="LOCAL-00031" summary="router updated">
+      <option name="closed" value="true" />
+      <created>1740181007894</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1740181007894</updated>
+    </task>
+    <task id="LOCAL-00032" summary="logout function added">
+      <option name="closed" value="true" />
+      <created>1740181045807</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1740181045807</updated>
+    </task>
+    <task id="LOCAL-00033" summary="login page fixed">
+      <option name="closed" value="true" />
+      <created>1740181087447</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1740181087447</updated>
+    </task>
+    <task id="LOCAL-00034" summary="app.jsx updated">
+      <option name="closed" value="true" />
+      <created>1740181120893</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1740181120893</updated>
+    </task>
+    <task id="LOCAL-00035" summary="AppContext.js updated">
+      <option name="closed" value="true" />
+      <created>1740183052682</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1740183052682</updated>
+    </task>
+    <task id="LOCAL-00036" summary="AppContext.js updated">
+      <option name="closed" value="true" />
+      <created>1740750197788</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1740750197788</updated>
+    </task>
+    <task id="LOCAL-00037" summary="appointmentModel.js">
+      <option name="closed" value="true" />
+      <created>1740778897269</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1740778897269</updated>
+    </task>
+    <task id="LOCAL-00038" summary="userRoutes updated">
+      <option name="closed" value="true" />
+      <created>1740782301180</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1740782301180</updated>
+    </task>
+    <task id="LOCAL-00039" summary="userRoutes updated">
+      <option name="closed" value="true" />
+      <created>1740782315881</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1740782315881</updated>
+    </task>
+    <task id="LOCAL-00040" summary="authUser.js">
+      <option name="closed" value="true" />
+      <created>1740782337115</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1740782337115</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Navbar.jsx updated">
+      <option name="closed" value="true" />
+      <created>1740782466285</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1740782466285</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Appointment.jsx updated">
+      <option name="closed" value="true" />
+      <created>1740782501133</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1740782501133</updated>
+    </task>
+    <task id="LOCAL-00043" summary="AllAppointments.jsx">
+      <option name="closed" value="true" />
+      <created>1740835822129</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1740835822129</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Dashboard.jsx">
+      <option name="closed" value="true" />
+      <created>1740837529854</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1740837529854</updated>
+    </task>
+    <task id="LOCAL-00045" summary="doctors , admin dashboard updated">
+      <option name="closed" value="true" />
+      <created>1743941259825</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1743941259825</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="package.json" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="RECENT_FILTERS">
@@ -9500,10 +9852,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
-    <MESSAGE value="index.css , main.jsx , Navbar.jsx" />
-    <MESSAGE value="Home.jsx" />
-    <MESSAGE value="App.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="App.jsx" />
+    <MESSAGE value="Sidebar.jsx" />
+    <MESSAGE value="AddDoctor.jsx page" />
+    <MESSAGE value="doctorController.js" />
+    <MESSAGE value="method added" />
+    <MESSAGE value="DoctorsList.jsx added" />
+    <MESSAGE value="AdminContext. jsx updated" />
+    <MESSAGE value="AddDoctor. jsx updated" />
+    <MESSAGE value="userController.js" />
+    <MESSAGE value="doctorList function added" />
+    <MESSAGE value="doctorRoute.js" />
+    <MESSAGE value="import fixed" />
+    <MESSAGE value="router updated" />
+    <MESSAGE value="logout function added" />
+    <MESSAGE value="login page fixed" />
+    <MESSAGE value="app.jsx updated" />
+    <MESSAGE value="AppContext.js updated" />
+    <MESSAGE value="appointmentModel.js" />
+    <MESSAGE value="userRoutes updated" />
+    <MESSAGE value="authUser.js" />
+    <MESSAGE value="Navbar.jsx updated" />
+    <MESSAGE value="Appointment.jsx updated" />
+    <MESSAGE value="AllAppointments.jsx" />
+    <MESSAGE value="Dashboards.jsx" />
+    <MESSAGE value="Dashboard.jsx" />
+    <MESSAGE value="doctors , admin dashboard updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="doctors , admin dashboard updated" />
   </component>
 </project>
