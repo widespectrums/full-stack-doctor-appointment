@@ -16,43 +16,78 @@ const changeAvailability = async (req, res) => {
     }
 }
 const doctorList = async (req, res) => {
-    try{
-        const doctors = await doctorModel.find({}).select(["-password" , "-email"])
+    try {
+        const doctors = await doctorModel.find({}).select(["-password", "-email"])
         res.json({success: true, doctors})
-    }catch(error){
+    } catch (error) {
         console.log(error)
         res.json({success: false, message: error.message})
     }
 }
 const loginDoctor = async (req, res) => {
     try {
-        const { email, password } = req.body
-        const user = await doctorModel.findOne({ email })
+        const {email, password} = req.body
+        const user = await doctorModel.findOne({email})
         if (!user) {
-            return res.json({ success: false, message: error.message })
+            return res.json({success: false, message: error.message})
         }
         const isMatch = await bcrypt.compare(password, user.password)
         if (isMatch) {
-            const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET)
-            res.json({ success: true, token })
+            const token = jwt.sign({id: user._id}, process.env.JWT_SECRET)
+            res.json({success: true, token})
         } else {
-            res.json({ success: false, message: error.message })
+            res.json({success: false, message: error.message})
         }
     } catch (error) {
         console.log(error)
-        res.json({ success: false, message: error.message })
+        res.json({success: false, message: error.message})
     }
 }
 //API to get doc appointments for doc panel
 const appointmentsDoctor = async (req, res) => {
-    try{
-        const { docId } = req.body
+    try {
+        const {docId} = req.body
         const appointments = await appointmentModel.find({docId})
         res.json({success: true, appointments})
-    }catch (error) {
+    } catch (error) {
         console.log(error)
-        res.json({ success: false, message: error.message })
+        res.json({success: false, message: error.message})
+    }
+}
+//API to mark app comleted for doc panel
+const appointmentComplete = async (req, res) => {
+    try {
+        const {docId, appointmentId} = req.body
+        const appointmentData = await appointmentModel.findById(appointmentId)
+
+        if (appointmentData && appointmentData.docId === docId) {
+            await appointmentModel.findByIdAndUpdate(appointmentId, {isCompleted: true})
+            return res.json({success: true, message: "Appointment Completed"})
+
+        }else {
+            return res.json({success: false, message: "Mark Failed"})
+        }
+    } catch (error) {
+        console.log(error)
+        res.json({success: false, message: error.message})
+    }
+}
+//API to mark app completed for doc panel
+const appointmentCancel = async (req, res) => {
+    try {
+        const {docId, appointmentId} = req.body
+        const appointmentData = await appointmentModel.findById(appointmentId)
+
+        if (appointmentData && appointmentData.docId === docId) {
+            await appointmentModel.findByIdAndUpdate(appointmentId, {cancelled: true})
+            return res.json({success: true, message: "Appointment Cancelled"})
+        }else {
+            return res.json({success: false, message: "Cancellation Failed"})
+        }
+    } catch (error) {
+        console.log(error)
+        res.json({success: false, message: error.message})
     }
 }
 
-export {changeAvailability,doctorList, loginDoctor, appointmentsDoctor}
+export {changeAvailability, doctorList, loginDoctor, appointmentsDoctor, appointmentComplete, appointmentCancel}
