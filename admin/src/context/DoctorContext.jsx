@@ -82,12 +82,12 @@ const DoctorContextProvider = (props) => {
         }
     }
     const value = {
-        dToken, setDToken, backendUrl,
+        dToken, setDToken,
+        backendUrl,
         appointments, setAppointments,
         getAppointments,
-        cancelAppointment,
-        completeAppointment,
-        dashData, getDashData,
+        cancelAppointment, completeAppointment,
+        dashData, setDashData, getDashData,
         profileData, setProfileData,
         getProfileData,
     }
