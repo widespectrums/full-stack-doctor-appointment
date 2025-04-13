@@ -39,7 +39,6 @@ const Dashboard = () => {
                         <p className={"text-gray-400"}>Patients</p></div>
                 </div>
             </div>
-
             <div className={"bg-white"}>
                 <div className={"flex items-center gap-2.5 px-4 py-4 mt-10 rounded-t border"}>
                     <img src={assets.list_icon} alt=""/>
